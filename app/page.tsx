@@ -1,6 +1,7 @@
 "use client";
 
 import { AlertTriangle, HeartHandshake, ShieldCheck, Phone, Users, User, Baby } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 
 export default function Page() {
   return (
@@ -224,7 +225,8 @@ export default function Page() {
           <div className="mt-10 rounded-3xl bg-white/5 p-6">
             <p className="text-sm text-brand-khaki/80">
               <span className="font-semibold text-brand-khaki">Emergencia:</span> 911 •{" "}
-              <span className="font-semibold text-brand-khaki">Línea de la Vida:</span> 800 911 2000
+              <span className="font-semibold text-brand-khaki">Línea de la Vida:</span> 800 911 2000 •{" "}
+              <span className="font-semibold text-brand-khaki">Creciendo Juntos:</span> 656 827 2062
             </p>
           </div>
         </div>
@@ -232,7 +234,17 @@ export default function Page() {
         <div className="border-t border-white/10 py-4 text-center text-xs text-brand-khaki/60">
           © {new Date().getFullYear()} Creciendo Juntos. Información general; no sustituye atención profesional.
         </div>
+        <a
+  href="https://wa.me/5216568272062?text=Hola%20necesito%20ayuda%20psicológica"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg hover:scale-105 transition"
+  aria-label="Contactar por WhatsApp"
+>
+  <MessageCircle className="h-6 w-6" />
+</a>
       </section>
+      
     </main>
   );
 }
